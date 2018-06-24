@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #5f5858;
+}
+.logo {
+	height: 40px;
+	margin-left: 25px;
+}
+.login {
+	position: fixed;
+  	top: 50%;
+  	left: 50%;	
+  	transform: translate(-50%, -50%);
+}
+.login-box {
+	height: 250px;
+    width: 450px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.login-header {
+	text-align: left;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.login-desc {
+	text-align: left;
+    margin-bottom: 50px;
+}
+.login-area {
+	border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+.login-button-group {
+	text-align: right;
+    margin: 12px;
+}
+.login-button-group .login-button {
+	margin-left: 10px;
+}
+.login-text{
+	float: left;
+    font-size: 12px;
+}
+.tab {
+	color: #000 !important;
+}
+.align-left {
+	text-align: left;
+}
+.bold {
+	font-weight: bold;
+}
+.margin-20 {
+	margin: 20px;
+}
+.build-block {
+	margin-top: 20px;
+}
+.question-label {
+	float: left;
+    font-weight: bold;
+    margin: 10px;
+}
+.question-div {
+	width: 100%;
+    float: left;
+}
+.question-div .question-input {
+	float: left;
+	margin: 10px;
+    height: 30px;
+    width: 80%;
+    background-color: #f1f0f0;
+    border: 1px solid #d8d3d3;
+    padding: 5px;
+    border-radius: 5px;
+}
+.option-area {
+	width: 80%;
+}
+.option-area .option-input {
+	width: 100%;
+}
+.q-block {
+	margin-bottom: 100px;
+	overflow:hidden;
+}
+.margin-25 {
+	margin: 25px;
+}
+.q-btns {
+	border-top: 1px solid #d8d3d3;
+	padding-top: 10px;
+}
+.q-col {
+	border: 1px solid #d8d3d3;
+	margin: 0;
+	padding: 20px;
+}
+.width-60 {
+	width: 60%;
+}
+.width-50 {
+	width: 50%;
+}
+.width-10 {
+	width: 10%;
+}
+.width-20 {
+	width: 20%;
+}
+.color-gray {
+	color: #bbb4b4;
+}
+.bg-gray {
+	background-color: #bbb4b4 !important;
+}
+.list-block {
+	margin-top: 20px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.student-box {
+	height: 280px;
+}
+.margin-left-70 {
+	margin-left: 70%
+}
+.answer-input {
+	float: left;
+	margin: 10px;
+    height: 30px;
+    width: 80%;
+    background-color: #f1f0f0;
+    border: 1px solid #d8d3d3;
+    padding: 5px;
+    border-radius: 5px;
+}
+.ans-btn {
+	width: 100%
+}
+.ans-btn .answer-btn{
+	margin-left: 50px;
+}
+.pointer {
+	cursor: pointer;
+}

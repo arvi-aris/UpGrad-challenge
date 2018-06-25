@@ -109,7 +109,7 @@ class AssociatedQuestions extends Component {
                   </td>
                   <td className="q-col width-50">
                     <div className="ql-title align-left bold"> {question.title} </div>
-                    <div className="ql-desc align-left"> {question.description.length < 20 ? question.description.length : question.description.slice(0, 17)+'...'} </div>
+                    <div className="ql-desc align-left"> {question.description.length < 20 ? question.description : question.description.slice(0, 17)+'...'} </div>
                   </td>
                   <td className="q-col width-20">
                     <div className="ql-title align-left bold color-gray">QUESTION TYPE</div>

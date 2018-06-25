@@ -47,7 +47,7 @@ class QuestionList extends Component {
       }, {
         name: 'Steve Harrington'
       }];
-      localStorage.setItem('studentList', JSON.stringify(studentList));
+      localStorage.setItem('studentList', JSON.stringify(this.studentList));
     }
     this.studentList = Array.isArray(this.studentList) ? this.studentList : [];
   }

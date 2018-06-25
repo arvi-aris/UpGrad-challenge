@@ -60,8 +60,7 @@ class BuildElements extends Component {
           <div className="question-div"><input type="text" className="question-input" placeholder="Type your question title here .." id="q-title"/> </div>
         </div> }
         { this.props.type && <div>
-          <div><label for="q-desc
-          " className="question-label">Question Description:</label> </div>
+          <div><label for="q-desc" className="question-label">Question Description:</label> </div>
           <div className="question-div"><input type="text" className="question-input" placeholder="Type your question description here .." id="q-desc"/> </div>
         </div> }
         { this.props.type === 'passage' && <div>

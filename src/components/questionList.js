@@ -49,6 +49,7 @@ class QuestionList extends Component {
       }];
       localStorage.setItem('studentList', JSON.stringify(studentList));
     }
+    this.studentList = Array.isArray(this.studentList) ? this.studentList : [];
   }
 
   authorNewQuestion = () => {

@@ -48,6 +48,7 @@ class Student extends Component {
       }];
       localStorage.setItem('studentList', JSON.stringify(studentList));
     }
+    studentList = Array.isArray(studentList) ? studentList : [];
     this.setState({
       studentList: studentList
     });

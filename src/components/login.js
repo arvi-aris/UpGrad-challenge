@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Redirect } from 'react-router'
+import axios from 'axios';
 
 class Login extends Component {
   constructor(props) {
@@ -34,6 +35,15 @@ class Login extends Component {
     this.setState({
       redirect: selectedUser
     });
+    axios.post('/login', {
+      type: selectedUser
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
   render() {
@@ -48,6 +58,7 @@ class Login extends Component {
             <div className="login-desc"> I am a.. </div>
             <div className="login-area">
               <table>
+                <tbody>
                 <tr>
                   <td>
                     <input type="radio" name="user" id="male" value="author" onChange={this.switchUser}/>
@@ -64,6 +75,7 @@ class Login extends Component {
                     <label for="female">Student</label> <br/>
                   </td>
                 </tr>
+                </tbody>
               </table>
             </div>
             <div>

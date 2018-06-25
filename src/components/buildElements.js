@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
+import axios from 'axios';
 
 class BuildElements extends Component {
   constructor(props) {
@@ -36,6 +37,13 @@ class BuildElements extends Component {
     }
     this.props.getQuestion(questionDetails);
     this.reset();
+    axios.post('/buildQuestion', questionDetails)
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
   reset = () => {

@@ -131,7 +131,7 @@ class QuestionList extends Component {
         </tr>
         {this.props.questionList.map((question, index) => {
           return (
-                <tr>
+                <tr key={index}>
                   <td>
                     <input type="checkbox" name="selectQuestion" boxFor={index} className="question-select" onChange={this.isSelected}/>
                   </td>

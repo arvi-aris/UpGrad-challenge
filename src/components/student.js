@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Redirect } from 'react-router'
+import axios from 'axios';
 
 class Student extends Component {
   constructor(props) {
@@ -78,6 +79,7 @@ class Student extends Component {
           <div>
             <div className="login-area">
               <table>
+                <tbody>
                 {this.state.studentList.map((student,index) => {
                   return (<tr key={index}>
                   <td>
@@ -87,6 +89,7 @@ class Student extends Component {
                     <label for={index}>{student.name}</label> <br/>
                   </td>
                 </tr>)})}
+                </tbody>
               </table>
             </div>
             <div>

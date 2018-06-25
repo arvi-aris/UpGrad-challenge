@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
+import axios from 'axios';
 
 class AssociatedQuestions extends Component {
   constructor(props) {
@@ -69,6 +70,27 @@ class AssociatedQuestions extends Component {
       questionDetail: questionDetail,
       questionSelected: true
     })
+  }
+
+  submit = () => {
+    let questionDetail = this.state.questionDetail;
+    let type = questionDetail.type;
+    let answer;
+    if (type === 'mcq') {
+      answer = document.querySelector('input[name="option"]:checked').value;
+    } else if (type === 'passage') {
+      answer = document.getElementById('q-answ').value;
+    }
+    axios.post('/answerQuestion', {
+      questionDetail: questionDetail,
+      answer: answer
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
 
